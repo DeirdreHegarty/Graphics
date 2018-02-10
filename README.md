@@ -1,8 +1,8 @@
 ## Newton's Cradle
 
 Requirements:
-*avconv
-*[POV-Ray](http://povray.org/)
+* avconv
+* [POV-Ray](http://povray.org/)
 
 ![Newton's Cradle](Newtons-Cradle.png)
 
