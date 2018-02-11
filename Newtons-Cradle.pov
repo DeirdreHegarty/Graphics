@@ -201,12 +201,23 @@ box {
 object { firstSphere
 
  translate<0,-8,0>
+
+
+ // Compare the output of `(Amplitude*sin(clock*2))` to 0 
+ // when <0 return 1 (a.k.a. true); otherwise 0 - and anything multiplied by 1 is itself
+ // Only allow for negative values of sine (going left)
  rotate< 0, 0, (Amplitude*sin(clock*2))*(Amplitude*sin(clock*2)<0)>
+
  translate -<0,-8,0>
 }
 object { lastSphere
 
  translate <-16,-8,0>
+
+ // Compare the output of `(Amplitude*sin(clock*2))` to 0 
+ // when >0 return 1 (a.k.a. true); otherwise 0 - and anything multiplied by 1 is itself
+ // Only allow for positive values of sine (going right)
  rotate< 0, 0, (Amplitude*sin(clock*2))*(Amplitude*sin(clock*2)>0) >
+ 
  translate -<-16,-8,0>
 }
